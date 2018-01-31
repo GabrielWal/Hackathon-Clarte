@@ -12,7 +12,7 @@ public class SpawnPortal : MonoBehaviour {
 
     public GameObject portalToDrop;
 
-    public float maxDistance = 0.25f;
+    [SerializeField] float maxDistance = -1.0f;
 
     private float Normale(Vector3 x, Vector3 y)
     {
@@ -47,6 +47,8 @@ public class SpawnPortal : MonoBehaviour {
         if (drawing.x > 0.5 && drawing.y > 0.5 && drawing.z > 0.5)
         {
             Instantiate(portalToDrop, new Vector3(1.0f,1.0f,1.0f), Quaternion.identity);
+            posFinal = pos0 + new Vector3(10.0f, 0.0f, 0.0f);
+            drawing = Vector3.zero;
         }
 	}
 }

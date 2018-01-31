@@ -153,8 +153,8 @@ MonoBehaviour:
   pos2: {x: 0, y: 0, z: 0}
   posFinal: {x: 0, y: 0, z: 0}
   drawing: {x: 0, y: 0, z: 0}
-  portalToDrop: {fileID: 0}
-  maxDistance: 0.25
+  portalToDrop: {fileID: 1089568734}
+  maxDistance: -1
 --- !u!1 &1089568734
 GameObject:
   m_ObjectHideFlags: 0
@@ -208,6 +208,7 @@ GameObject:
   - component: {fileID: 1313481305}
   - component: {fileID: 1313481307}
   - component: {fileID: 1313481306}
+  - component: {fileID: 1313481308}
   m_Layer: 0
   m_Name: Particle System
   m_TagString: Untagged
@@ -287,7 +288,7 @@ ParticleSystem:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1313481304}
   serializedVersion: 5
-  lengthInSec: 20
+  lengthInSec: 1
   simulationSpeed: 1
   looping: 1
   prewarm: 0
@@ -339,7 +340,7 @@ ParticleSystem:
   moveWithTransform: 1
   moveWithCustomTransform: {fileID: 0}
   scalingMode: 1
-  randomSeed: 654002465
+  randomSeed: 405692140
   InitialModule:
     serializedVersion: 3
     enabled: 1
@@ -3542,6 +3543,18 @@ ParticleSystem:
         m_PreInfinity: 2
         m_PostInfinity: 2
         m_RotationOrder: 4
+--- !u!114 &1313481308
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1313481304}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4615b27c9c6af8e459802c238d2faaea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  particleSystem2: {fileID: 1313481307}
 --- !u!1 &1667445557
 GameObject:
   m_ObjectHideFlags: 0
