@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 11489952}
   - component: {fileID: 10825254}
   m_Layer: 0
-  m_Name: shot_prefab
+  m_Name: sabreLaser
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
