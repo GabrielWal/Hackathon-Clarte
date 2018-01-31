@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 10825254}
   - component: {fileID: 54394125346176080}
   - component: {fileID: 136339081413511036}
+  - component: {fileID: 114736326815842024}
   m_Layer: 0
   m_Name: sabreLaser
   m_TagString: Untagged
@@ -123,7 +124,7 @@ MonoBehaviour:
   m_templateMaterial: {fileID: 2100000, guid: f68f8c3a3d76fb74cbb880d372c81620, type: 2}
   m_doNotOverwriteTemplateMaterialProperties: 1
   m_startPos: {x: 0, y: 0, z: 0}
-  m_endPos: {x: 0, y: 52, z: 0}
+  m_endPos: {x: 0, y: 20, z: 0}
   m_lineColor: {r: 0.034482718, g: 1, b: 0, a: 0}
   m_lineWidth: 66
   m_lightSaberFactor: 0.747
@@ -185,6 +186,17 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &114736326815842024
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 136330}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cd82cf9bf99b331479bbb8a20f71e666, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!136 &136339081413511036
 CapsuleCollider:
   m_ObjectHideFlags: 1

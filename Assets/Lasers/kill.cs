@@ -15,9 +15,7 @@ public class kill : MonoBehaviour {
 	}
 
 	void OnTriggerEnter(Collider other) {
-		Debug.Log ("banana1");
 		if (other.tag == "Zombie") {
-			Debug.Log ("banana2");
 			Destroy (other.gameObject);
 		}
 	}
