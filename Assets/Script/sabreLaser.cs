@@ -25,10 +25,6 @@ public class sabreLaser : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 
-
-		trigger = Input.GetAxis("Horizontal");
-		Debug.Log (trigger);
-
 		if(
 			Vector3.Distance(mainsGauche.transform.position,mainsDroite.transform.position)<=distmax
 			&&
