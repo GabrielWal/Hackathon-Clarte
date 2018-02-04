@@ -1,10 +1,9 @@
-﻿using System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class teleportation : MonoBehaviour {
 	public GameObject tp;
-	public GameObject player;
 
 	// Use this for initialization
 	void Start () {
@@ -18,8 +17,8 @@ public class teleportation : MonoBehaviour {
 
 	void OnTriggerEnter(Collider other) {
 		if (other.tag == "Portail") {
-			player.transform.position = tp.transform.position;
-			player.transform.position += transform.forward;
+			transform.position = tp.transform.position;
+			transform.position += transform.forward;
 		}
 	}
 }
